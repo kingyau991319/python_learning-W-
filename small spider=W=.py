@@ -11,13 +11,12 @@ data = requests.get(url, headers=headers).text
 s=etree.HTML(data)
 test = s.xpath('//*[@id="content"]/div[2]/div/div/div/div/div/ul/li/article/div/h3/a/text()')
 pattern = re.compile('\s{16}')
-collect_data = {}
-collect_data['element'] = []
+collect_data = []
 
 for i in range(0,49):
 	result = re.sub(pattern, '',test[i])
 	#print("index:%2d, title: %s" % (i, result))
-	collect_data['element'].append({
+	collect_data.append({
 			'index' : i,
 			'title' : result
 		   })
