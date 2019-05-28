@@ -10,3 +10,6 @@ maybe i should know with that?
 
 # 27-4-2019
 i just test the baceria problem but i dont why i cannot do that, maybe fix it after prob exam
+
+# 28-5-2019
+orz,i need to find something to do 
