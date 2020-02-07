@@ -11,3 +11,6 @@ maybe i should know with that?
 
 # 27-4-2019
 i just test the baceria problem but i dont why i cannot do that, maybe fix it after prob exam
+
+# 7-2-2019
+pandas, recommandation system, learning python =w= happy happy
