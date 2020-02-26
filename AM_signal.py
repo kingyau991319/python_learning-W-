@@ -8,12 +8,10 @@ def DSBLC_singal(amp=5, modulation_index=1, freq_of_carrier_signal=1200, freq_of
         np.cos((freq_of_carrier_signal-freq_of_message_signal) * np.pi * X) + 7 * np.cos(freq_of_carrier_signal * np.pi * X)
 
     # if add AWGN
-    mu , sigma = 0, 0.1
-    s = np.random.normal(mu, sigma,size)
-    formula += s
+    mu,sigma = 0, 0.1
+    formula += np.random.normal(mu, sigma,size)
 
     plt.plot(X, formula, color="red", alpha=0.5)
-
     plt.show()
 
 
