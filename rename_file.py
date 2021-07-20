@@ -3,7 +3,7 @@
 
 # -> made on 20-7-2021
 
-import os,sys
+import os
 import pathlib
 
 def renameFile(dir_path = None, out_path = None):
@@ -12,7 +12,6 @@ def renameFile(dir_path = None, out_path = None):
     file_paths = os.listdir(dir_path)
     file_lens = len(file_paths)
 
-    print(file_paths)
     print("file_len:",file_lens)
 
     # set the output file if None:
@@ -26,6 +25,7 @@ def renameFile(dir_path = None, out_path = None):
     for k in range(0,file_lens):
         file_format,file_extension = os.path.splitext(file_paths[k])
         out_file_name = out_path + "/" + str(k+1) + str(file_extension)
+        print("out_file_name",out_file_name)
         f1 = open(file_paths[k], mode='r', encoding='utf-8')
         f2 = open(out_file_name, mode='w+', encoding='utf-8')
         f2.write(f1.read())
