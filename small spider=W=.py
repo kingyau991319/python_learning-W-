@@ -15,12 +15,12 @@ collect_data = []
 
 for i in range(0,49):
 	result = re.sub(pattern, '',test[i])
-	#print("index:%2d, title: %s" % (i, result))
+	print("index:%2d, title: %s" % (i, result))
 	collect_data.append({
 			'index' : i,
 			'title' : result
 		   })
-	time.sleep(0.1)
+	time.sleep(0.2)
 
 with open('data.json', 'w') as f:
 	json.dump(collect_data, f)
